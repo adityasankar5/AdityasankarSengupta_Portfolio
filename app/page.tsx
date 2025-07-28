@@ -371,7 +371,7 @@ export default function Home() {
             <div className="flex justify-center">
               <Button variant="outline" className="border-purple-500/50 hover:bg-purple-500/10 text-purple-400">
                 <Link
-                  href="https://drive.google.com/file/d/1mNioYO23rXi-qeWOuBCQWqucJV12CPyS/view?usp=drivesdk"
+                  href="https://drive.google.com/file/d/1AmJejFn_j-FXVCiaiD5geAYcFZhThFji/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"
@@ -394,6 +394,22 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCard
+                title="Genie: AI Powered Financial Assistant"
+                description="Created an intelligent financial assistant that helps users manage their finances, track investments, set budgets, and receive personalized financial advice. Genie leverages AI to provide insights and recommendations based on spending patterns and goals."
+                technologies={["React", "Node.js", "Express", "Supabase", "TensorFlow", "Grok API"]}
+                link="#"
+                websiteLink="https://genie-beryl.vercel.app/"
+                accentColor="purple"
+              />
+              <ProjectCard
+  title="Smart Packing Optimizer"
+  description="Developed an intelligent packing assistant that efficiently arranges items into boxes based on dimensions, weight, and cost constraints. The system uses bin-packing heuristics and visualizes the optimal packing layout in 3D, helping users save space and reduce shipping costs."
+  technologies={["Next.js", "TypeScript", "Three.js", "Supabase", "Node.js", "Bin-Packing Heuristics"]}
+  link="#"
+  websiteLink="https://smart-packing-optimizer-17524854972.vercel.app/"
+  accentColor="teal"
+/>
+              <ProjectCard
                 title="Machine Learning-Powered Stock Price Prediction"
                 description="Built a LSTM-based model with 85% accuracy for stock price prediction on real-time data. Designed a user-friendly interface used by 200+ users."
                 technologies={["Python", "JS", "HTML", "Bootstrap", "Django"]}
@@ -411,22 +427,14 @@ export default function Home() {
               />
 
               <ProjectCard
-                title="Full Stack Marketplace Platform with Mobile Companion"
-                description="Developed a full-stack e-commerce platform with role-based authentication (JWT) for buyers and sellers. Engineered secure API endpoints with middleware for protected routes and real-time order updates."
-                technologies={["React", "Node.js", "Express", "Airtable", "Glide"]}
-                link="https://github.com/adityasankar5/marketplace-app"
-                websiteLink="https://marketplaceapp-beta.vercel.app/"
-                accentColor="purple"
-              />
-
-              <ProjectCard
                 title="Hack of Duty - Hackathon Platform"
                 description="Led and developed a hackathon platform for ACM SRM SIGKDD. The platform features registration, team formation, project submission, and judging functionalities."
                 technologies={["Next.js", "React", "Tailwind", "Node.js"]}
                 link="https://github.com/adityasankar5/Hack_Of_Duty"
                 websiteLink="https://hackofduty.vercel.app/"
-                accentColor="teal"
+                accentColor="purple"
               />
+
             </div>
           </div>
         </section>
@@ -472,37 +480,47 @@ export default function Home() {
                   </p>
                 </CardFooter>
               </Card>
-
               <Card className="bg-zinc-800 border-zinc-700 overflow-hidden">
-                <div className="h-1 bg-teal-600"></div>
-                <CardHeader>
-                  <div className="flex items-center gap-2">
-                    <Sparkles className="h-5 w-5 text-teal-400" />
-                    <CardTitle>Genie</CardTitle>
-                  </div>
-                  <CardDescription className="text-zinc-400">An AI-powered financial assistant</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-zinc-300">
-                    Creating an intelligent financial assistant that helps users manage their finances, track investments,
-                    set budgets, and receive personalized financial advice. Genie leverages AI to provide insights and
-                    recommendations based on spending patterns and goals.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {["React", "Node.js", "Express", "PostgreSQL", "TensorFlow", "Gemini API"].map((tech) => (
-                      <Badge key={tech} variant="secondary" className="bg-zinc-700 text-teal-300 hover:bg-zinc-600">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-                <CardFooter className="border-t border-zinc-700 bg-zinc-800/80 px-6 py-3">
-                  <p className="text-sm text-zinc-400">
-                    <span className="inline-block w-2 h-2 rounded-full bg-teal-500 mr-2"></span>
-                    In active development
-                  </p>
-                </CardFooter>
-              </Card>
+  <div className="h-1 bg-blue-600"></div>
+  <CardHeader>
+    <div className="flex items-center gap-2">
+      <Code className="h-5 w-5 text-blue-400" />
+      <CardTitle>Code2API</CardTitle>
+    </div>
+    <CardDescription className="text-zinc-400">
+      Autogenerates APIs and docs by parsing your codebase
+    </CardDescription>
+  </CardHeader>
+  <CardContent>
+    <p className="text-zinc-300">
+      Creating a dev tool that analyzes TypeScript or Python projects and auto-generates REST or GraphQL endpoints, OpenAPI
+      docs, and boilerplate code by parsing function signatures, comments, and file structures. Ideal for rapid backend
+      scaffolding.
+    </p>
+    <div className="flex flex-wrap gap-2 mt-4">
+      {[
+        "TypeScript",
+        "Node.js",
+        "Babel Parser",
+        "Swagger",
+        "OpenAI API",
+        "Express",
+        "GitHub API"
+      ].map((tech) => (
+        <Badge key={tech} variant="secondary" className="bg-zinc-700 text-blue-300 hover:bg-zinc-600">
+          {tech}
+        </Badge>
+      ))}
+    </div>
+  </CardContent>
+  <CardFooter className="border-t border-zinc-700 bg-zinc-800/80 px-6 py-3">
+    <p className="text-sm text-zinc-400">
+      <span className="inline-block w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+      In active development
+    </p>
+  </CardFooter>
+</Card>
+
             </div>
           </div>
         </section>
